@@ -9,9 +9,10 @@
   </head>
 
   <body>
-
-     <!-- for each flash there will be a name and message displayed to the user. -->
     <%= render 'layouts/navbar' %>
+      <% flash.each do |name, msg| %>
+      <% msg %>
+    <% end %>
     <div class="container-fluid">
       <!-- content of rails app. All other views get rendered here -->
       <%= yield %>
