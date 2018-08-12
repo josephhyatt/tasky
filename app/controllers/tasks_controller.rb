@@ -3,7 +3,11 @@ class TasksController < ApplicationController
 	before_action :set_task, only:[:edit, :update, :show, :destroy, :change]
 
 	def index
+		@to_do = current_user.tasks.where(state: 'to_do')
+		@doing = current_user.tasks.where(state: 'doing')
+		@done = current_user.tasks.where(state: 'done')
 	end
+	
 
   def new
     @task = Task.new
