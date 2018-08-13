@@ -1,6 +1,7 @@
 class Task < ApplicationRecord
   validates :content, presence: true, length: {minimum: 4, maximum: 300}
-
+	validates :title, presence: true
+	
   belongs_to :user
 
   auto_html_for :content do
