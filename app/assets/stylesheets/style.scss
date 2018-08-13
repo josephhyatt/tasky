@@ -1,0 +1,143 @@
+/* center jumbotron on home.html.erb */ 
+.vertical-center {
+	background: #000;
+	height: 35%;
+	width: 35%;
+	text-align: center;  /* align the inline(-block) elements horizontally */
+	font: 0/0 a;         /* remove the gap between inline(-block) elements */
+	opacity: .7;
+	position: relative;
+	vertical-align: middle;
+	margin: 300px auto;
+}
+
+.vertical-center:before {    /* create a full-height inline block pseudo=element */
+	content: ' ';
+	display: inline-block;
+	vertical-align: middle;  /* vertical alignment of the inline element */
+	height: 100%;
+}
+
+@media (max-width: 768px) {
+	.vertical-center:before {
+		/* height: auto; */
+		display: none;
+	}
+}
+
+/* ------------------------------ */
+
+h1, h2, h3, h4, h5, h6  {
+	color: white;
+	font-family: 'Shojumaru', cursive;
+	background-color: black;
+	opacity: .9;
+}
+
+p {
+	font-family: 'Shojumaru', cursive;
+	color: #fff;
+	font-size: 18px;
+	text-align: center;
+}
+
+div.panel-body {
+	background: #1C1C1C;
+	margin-top: -10px;
+	opacity: .9;
+	font-size: 18px;
+}
+
+div.panel-footer {
+	background: #1C1C1C;
+	opacity: .9;
+}
+
+div.make-see-through {
+	opacity: .8;
+}
+
+.error-message {
+	width: 39%;
+	margin:auto;
+}
+
+.header-width {
+	width: 39%;
+	margin:auto;
+}
+
+.about-page {
+	height: 55%;
+	width: 55%;
+	text-align: center;  /* align the inline(-block) elements horizontally */
+	opacity: .7;
+	vertical-align: middle;
+	margin: 300px auto;
+}
+
+.btn {
+	opacity: 0.9;
+}
+
+.navbar-style {
+	background-color: #000;
+	text-decoration: none;
+	opacity: 0.8;
+}
+
+.task-text {
+	margin: 20px;
+}
+
+div {
+	color: #fff;
+	font-family: 'Shojumaru', cursive;
+  &:visited {
+    color: #000;
+  }
+}
+
+.text-black {
+	color: #000;
+}
+
+a {
+	color: #fff;
+	font-family: 'Shojumaru', cursive;
+ &:hover {
+    color: #000;
+  }  
+}
+
+.form-signin {
+	min-width: 1000px;
+	opacity: 0.9;
+}
+
+// custom flash message styling
+#notice_wrapper {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 999;
+	background: #548391;
+}
+
+p.notice {
+	padding: 1.7rem 0;
+	text-align: center;
+	margin: 0;
+	font-size: 1.25rem;
+	font-weight: 700;
+	color: #fff;
+	letter-spacing: 1px;
+}
+
+#particles-js {
+	position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #333;
+}
+

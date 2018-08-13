@@ -9,9 +9,8 @@
   </head>
 
   <body>
-
-    
-      <!-- custom notifications -->
+    <div id="particles-js"></div>
+    <%= javascript_include_tag 'particles.min', 'app'%>
       <% if notice %>
         <div id="notice_wrapper">
           <p class="notice"><%= notice %></p>
@@ -21,15 +20,11 @@
           <p class="alert"><%= alert %></p>
         </div>
       <% end %>
-    <!-- for each flash there will be a name and message displayed to the user. -->
       <%= render 'layouts/navbar' %>
       <% flash.each do |name, msg| %>
-        <!-- display message -->
         <% msg %>
       <% end %>
-      
       <div class="container-fluid">
-        <!-- content of rails app. All other views get rendered here -->
         <%= yield %>
       </div>
   </body>

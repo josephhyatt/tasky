@@ -5,10 +5,10 @@
     <% end %>
     <%= link_to '<i class="fa fa-trash"></i>'.html_safe, task_path(task), method: :delete, data: {confirm: 'Are you sure you want to delete task?'}, class: 'pull-right' %>
   </div>
-    <h4><div class="panel-body text-center"><%= task.title %></div></h4>
-    <div class="panel-body"><p><%= raw(task.content_html) %></p></div>
-      <div class="panel-footer">
-        <div class="btn-group btn-group-justified">	
+  <h4><div class="panel-body text-center"><%= task.title %></div></h4>
+  <div class="panel-body"><p><%= raw(task.content_html) %></p></div>
+  <div class="panel-footer">
+    <div class="btn-group btn-group-justified">	
       <% if task.state == 'doing' %> 
         <%= link_to '<i class="fa fa-long-arrow-left"></i>'.html_safe, change_task_path(task, state: "to_do"), method: :put, class: 'btn btn-info btn-block' %>
         <%= link_to '<i class="fa fa-long-arrow-right"></i>'.html_safe, change_task_path(task, state: "done"), method: :put, class: 'btn btn-info btn-block' %>

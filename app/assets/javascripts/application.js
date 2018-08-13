@@ -12,22 +12,20 @@
 //
 //= require rails-ujs
 //= require activestorage
+//= require twitter/bootstrap
 //= require turbolinks
+//= require particles.min
 //= require_tree .
 
+// jquery for flash notifications
+$(document).ready(function() {
+  setTimeout(function() {
+    $('#notice_wrapper').fadeOut("slow", function() {
+      $(this).remove();
+    })
+  }, 2500);
+});
 
-
-window.fbAsyncInit = function() {
-  FB.init({
-    appId      : '{292295831545248}',
-    cookie     : true,
-    xfbml      : true,
-    version    : '{v3.1}'
-  });
-    
-  FB.AppEvents.logPageView();   
-    
-};
 
 (function(d, s, id){
     var js, fjs = d.getElementsByTagName(s)[0];
@@ -42,3 +40,4 @@ window.fbAsyncInit = function() {
       statusChangeCallback(response);
     });
   }
+
