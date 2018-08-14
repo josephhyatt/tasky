@@ -25,7 +25,6 @@ module ApplicationHelper
       no_intra_emphasis:            true
     }
 
-    #renderer = Redcarpet::Render::HTML.new(options)
     renderer = HTML.new(options)
     markdown = Redcarpet::Markdown.new(renderer, extensions)
 
