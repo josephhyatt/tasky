@@ -9,6 +9,7 @@
 	position: relative;
 	vertical-align: middle;
 	margin: 300px auto;
+	border-radius: 15px;
 }
 
 .vertical-center:before {    /* create a full-height inline block pseudo=element */
@@ -68,12 +69,23 @@ div.make-see-through {
 }
 
 .about-page {
-	height: 55%;
-	width: 55%;
-	text-align: center;  /* align the inline(-block) elements horizontally */
+	height: 35%;
+	width: 90%;
 	opacity: .7;
 	vertical-align: middle;
 	margin: 300px auto;
+}
+
+.padding-about-body {
+	padding: 20px;	
+	border-radius: 15px;
+}
+
+h1.about-header {
+	width: 18%;
+	margin: auto;
+	padding: 10px;
+	border-radius: 215px;
 }
 
 .btn {
