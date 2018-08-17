@@ -1,8 +1,8 @@
 <div class="row">
+
   <div class="col-md-4">
     <h1 class="text-center">TO DO</h1>
     <%= render @to_do %>
-
     <div class="text-center">
       <%= link_to "New Task", new_task_path, class: 'btn btn-primary btn-block' %>
     </div>
@@ -17,4 +17,5 @@
     <h1 class="text-center">DONE</h1>
     <strike><%= render @done %></strike>
   </div>
+
 </div>

@@ -14,5 +14,4 @@ class Task < ApplicationRecord
 		link :target => "_blank", :rel => "nofollow"
 		simple_format
   end
-  
 end

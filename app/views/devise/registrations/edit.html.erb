@@ -1,6 +1,7 @@
-<div class="make-see-through">
-  <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }, html: {class: 'form-signin'}) do |f| %>
-    <h2 class="text-center">Edit <%= resource_name.to_s.humanize %></h2>
+<div class="form-background">
+  <div class="make-see-through">
+    <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }, html: {class: 'form-signin'}) do |f| %>
+      <h2 class="text-center">Edit <%= resource_name.to_s.humanize %></h2>
       <%= f.error_notification %>
       <%= f.input :email, required: true, autofocus: true, label: false, placeholder: "Enter Email" %>
 
@@ -11,12 +12,9 @@
       <%= f.input :current_password, required: true, label: false, placeholder: "Current Password" %>
       <%= f.input :password, required: false, label: false, placeholder: "Enter New Password" %>
       <%= f.input :password_confirmation, required: false, label: false, placeholder: "Confirm New Password" %>
-      <%= f.button :submit, "Update Password", class: 'btn btn-primary btn-block' %>
-    <h3 class="text-center">Cancel Account</h3>
-    <div class="text-center"><%= link_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure? How are you suppose to get you tasks done on time?" }, method: :delete, class: "btn btn-primary" %> <%= link_to "Back", :back, class: "btn btn-primary" %>  </div>
-  <% end %>
+      <%= f.button :submit, "Update Password", class: 'btn btn-primary' %>
+      <p class="text-center">Want to Cancel Account?</p>
+      <div class="text-center"><%= link_to "Delete Account", registration_path(resource_name), data: { confirm: "Are you sure? How are you suppose to get you tasks done on time?" }, method: :delete, class: "btn btn-danger" %> | <%= link_to "Back", :back, class: "btn btn-primary" %></div>
+    <% end %>
+  </div>
 </div>
-  
-  
-  
-  

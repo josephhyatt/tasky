@@ -1,22 +1,35 @@
-/* center jumbotron on home.html.erb */ 
+/** navbar styling **/
+
+.navbar-style {
+	background-color: #000;
+	text-decoration: none;
+	opacity: 0.8;
+}
+
+/* ------------------------------ */
+/** home page styling **/ 
+
 .vertical-center {
 	background: #000;
 	height: 35%;
-	width: 35%;
-	text-align: center;  /* align the inline(-block) elements horizontally */
-	font: 0/0 a;         /* remove the gap between inline(-block) elements */
+	width: 25%;
+	text-align: center;  
 	opacity: .7;
-	position: relative;
-	vertical-align: middle;
-	margin: 300px auto;
+	padding-top: 10px;
+	margin: 200px auto;
 	border-radius: 15px;
+	letter-spacing: 1px;
 }
 
-.vertical-center:before {    /* create a full-height inline block pseudo=element */
+.vertical-center:before {    
 	content: ' ';
 	display: inline-block;
-	vertical-align: middle;  /* vertical alignment of the inline element */
+	vertical-align: middle;  
 	height: 100%;
+}
+
+.subtitle-home {
+	padding-bottom: 15px;
 }
 
 @media (max-width: 768px) {
@@ -27,6 +40,7 @@
 }
 
 /* ------------------------------ */
+/** font styling **/ 
 
 h1, h2, h3, h4, h5, h6  {
 	color: white;
@@ -42,38 +56,20 @@ p {
 	text-align: center;
 }
 
-div.panel-body {
-	background: #1C1C1C;
-	margin-top: -10px;
-	opacity: .9;
-	font-size: 18px;
+.task-text {
+	margin: 40px auto;
+	width: 50%;
 }
 
-div.panel-footer {
-	background: #1C1C1C;
-	opacity: .9;
-}
+/* ------------------------------ */
+/** about page styling **/ 
 
-div.make-see-through {
-	opacity: .8;
-}
-
-.error-message {
-	width: 39%;
-	margin:auto;
-}
-
-.header-width {
-	width: 39%;
-	margin:auto;
-}
-
-.about-page {
-	height: 35%;
-	width: 90%;
-	opacity: .7;
-	vertical-align: middle;
-	margin: 300px auto;
+h1.about-header {
+	width: 22%;
+	margin: auto;
+	padding: 5px;
+	border-radius: 15px;
+	letter-spacing: 1px;
 }
 
 .padding-about-body {
@@ -81,53 +77,88 @@ div.make-see-through {
 	border-radius: 15px;
 }
 
-h1.about-header {
-	width: 18%;
-	margin: auto;
-	padding: 10px;
-	border-radius: 215px;
+.about-page {
+	height: 35%;
+	width: 50%;
+	opacity: .7;
+	vertical-align: middle;
+	margin: 200px auto;
+}
+
+/* ------------------------------ */
+/** panel styling **/ 
+
+div.panel-body {
+	background: #1C1C1C;
+	margin-top: -10px;
+	opacity: .9;
+	font-size: 18px;
+	word-wrap: break-word;
+}
+
+div.panel-footer {
+	background: #1C1C1C;
+	opacity: .9;
+}
+/* ------------------------------ */
+/** task styling **/
+
+#task_content {
+	height: 250px;
 }
 
 .btn {
 	opacity: 0.9;
 }
 
-.navbar-style {
-	background-color: #000;
-	text-decoration: none;
-	opacity: 0.8;
+.custom-btn-block-size {
+	width: 50%;
 }
 
-.task-text {
-	margin: 20px;
+/* ------------------------------ */
+/** show page buttons styling **/
+
+.form-background {
+	background: #000;
+	height: 35%;
+	width: 35%;
+	text-align: center;  
+	opacity: .7;
+	padding-top: 10px;
+	margin: 200px auto;
+	border-radius: 15px;
+	letter-spacing: 1px;
 }
+
+.form-group {
+	border: none;
+}
+
+/* ------------------------------ */
+/** edit page button styling **/
 
 div {
 	color: #fff;
 	font-family: 'Shojumaru', cursive;
   &:visited {
-    color: #000;
+    color: rgb(151, 231, 114);
   }
 }
 
-.text-black {
-	color: #000;
-}
+/* ------------------------------ */
+/** links styling **/
 
 a {
 	color: #fff;
 	font-family: 'Shojumaru', cursive;
  &:hover {
-    color: #000;
+    color: rgb(151, 231, 114);
   }  
 }
 
-.form-group {
-	border: 0px;
-}
+/* ------------------------------ */
+/** custom flash message styling **/
 
-
-// custom flash message styling
 #notice_wrapper {
 	position: absolute;
 	top: 0;
@@ -146,6 +177,9 @@ p.notice {
 	letter-spacing: 1px;
 }
 
+/* ------------------------------ */
+/** particle styling **/
+
 #particles-js {
 	position: absolute;
   width: 100%;
@@ -153,3 +187,15 @@ p.notice {
   background: #333;
 }
 
+/* ------------------------------ */
+/** custom extra styling **/
+
+div.make-see-through {
+	opacity: .8;
+}
+
+div.show-buttons {
+	margin: 20px auto;
+}
+
+/* ------------------------------ */
