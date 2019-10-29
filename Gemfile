@@ -39,7 +39,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'twitter-bootstrap-rails', '~> 4.0'
 gem 'simple_form', '~> 4.0', '>= 4.0.1'
-gem 'devise', '~> 4.4', '>= 4.4.3'
+gem 'devise', '~> 4.7'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.4'
 gem 'auto_html', '~>1.6.4'
 gem 'omniauth', '~> 1.8', '>= 1.8.1'
